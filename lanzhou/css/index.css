@@ -63,9 +63,10 @@ table {
     margin-top: 27px;
     margin-bottom: 27px;
 }
-.logo a, .logo img{
+
+.logo a, .logo img {
     width: 168px;
-    height:44px;
+    height: 44px;
     display: block;
 }
 
@@ -380,6 +381,10 @@ table {
     display: none;
 }
 
+.footer-hr {
+    height: 15px;
+}
+
 @media screen and (max-width: 800px) {
     html {
         font-size: 55px !important;
@@ -433,8 +438,8 @@ table {
 
     .describe-doubt {
         height: 335px;
-        -webkit-background-size:140% 100%;
-        background-size:140% 100%;
+        -webkit-background-size: 140% 100%;
+        background-size: 140% 100%;
     }
 
     .describe-doubt .describe-profit-tit {
@@ -573,4 +578,7 @@ table {
         margin-bottom: 20px;
     }
 
+    .footer-hr {
+        height: 7px;
+    }
 }
