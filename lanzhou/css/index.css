@@ -1,0 +1,576 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 微软雅黑;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 140px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.logo a, .logo img{
+    width: 168px;
+    height:44px;
+    display: block;
+}
+
+.banner {
+    height: 388px;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.describe-profit-tit {
+    font-size: 24px;
+    color: #0053b1;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #ccc;
+    margin-top: 42px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.describe-profit-tit span {
+    height: 47px;
+    padding: 0 23px;
+    display: inline-block;
+    border-bottom: solid 4px #666;
+}
+
+.describe {
+    font-size: 14px;
+}
+
+.describe .pre {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.describe-profit .pre span {
+    color: #0053b1;
+}
+
+.describe-doubt {
+    background: url("../images/answer-bg.png") no-repeat;
+    width: 100%;
+    height: 559px;
+    padding-top: 0;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.describe-doubt .describe-profit-tit {
+    margin-top: 52px;
+    padding-top: 10px;
+}
+
+.describe-doubt .describe-profit-tit span {
+    border-bottom: none;
+    position: relative;
+}
+
+.describe-doubt .describe-profit-tit span::after {
+    width: 180px;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #666;
+    height: 4px;
+}
+
+.describe-doubt-q {
+    background: url("../images/question.png") no-repeat left center;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 55px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.describe-doubt-a {
+    background: url("../images/answer.png") no-repeat;
+    line-height: 25px;
+    min-height: 31px;
+    font-size: 14px;
+    padding-left: 55px;
+}
+
+.describe-doubt ul {
+    margin: 0 auto;
+    margin-top: 47px;
+    display: block;
+    width: 393px;
+}
+
+.describe-doubt ul li:first-child {
+    margin-bottom: 18px;
+}
+
+.describe-risk-tit {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-top: 33px;
+    margin-bottom: 37px;
+}
+
+.describe-risk ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.describe-risk ul li {
+    width: 23%;
+    margin-left: 2.6%;
+    height: 289px;
+    float: left;
+}
+
+.describe-risk ul li:first-child {
+    margin-left: 0;
+}
+
+.describe-risk ul li div:first-child {
+    font-size: 42px;
+    text-align: center;
+    height: 143px;
+    line-height: 140px;
+    border: solid 1px #b5b5b5;
+    border-bottom: none;
+}
+
+.describe-risk ul li div:last-child {
+    height: 136px;
+    line-height: 24px;
+    color: #fff;
+    padding: 9px 15px 9px 9px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+.describe-risk ul li:nth-child(1) div:first-child {
+    color: #0193dc;
+}
+
+.describe-risk ul li:nth-child(1) div:last-child {
+    background: #0193dc;
+}
+
+.describe-risk ul li:nth-child(2) div:first-child {
+    color: #34caef;
+}
+
+.describe-risk ul li:nth-child(2) div:last-child {
+    background: #34caef;
+}
+
+.describe-risk ul li:nth-child(3) div:first-child {
+    color: #f37277;
+}
+
+.describe-risk ul li:nth-child(3) div:last-child {
+    background: #f37277;
+}
+
+.describe-risk ul li:nth-child(4) div:first-child {
+    color: #c172f2;
+}
+
+.describe-risk ul li:nth-child(4) div:last-child {
+    background: #c172f2;
+}
+
+.describe-risk-ms {
+    color: #0053b1;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 60px;
+}
+
+.describe-Saving ul {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.describe-Saving ul li {
+    width: 49%;
+    height: 316px;
+    position: relative;
+    float: left;
+    margin-top: 36px;
+}
+
+.describe-Saving ul li:nth-child(2n + 1) {
+    margin-right: 2%;
+}
+
+.describe-Saving ul li:nth-child(1) {
+    background: url("../images/reason01.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.describe-Saving ul li:nth-child(2) {
+    background: url("../images/reason02.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.describe-Saving ul li:nth-child(3) {
+    background: url("../images/reason03.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.describe-Saving ul li:nth-child(4) {
+    background: url("../images/reason04.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.describe-Saving ul li div {
+    position: absolute;
+    bottom: 0;
+    height: 130px;
+    width: 100%;
+    background: rgba(0, 0, 0, .45);
+    text-align: center;
+}
+
+.describe-Saving ul li div h4 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.describe-Saving ul li div p {
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer {
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer-describe {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+    background: #0053b1;
+    margin-bottom: 30px;
+}
+
+.footer .pre {
+    text-align: center;
+    line-height: 30px;
+}
+
+.consult {
+    background: #0053b1;
+    color: #fff;
+    text-align: center;
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 30px auto 42px auto;
+}
+
+.consult a {
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.describe-profit-tit-pc {
+    display: block;
+}
+
+.describe-profit-tit-phone {
+    display: none;
+}
+
+.pre-pc {
+    display: block;
+}
+
+.pre-phone {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 55px !important;
+    }
+
+    .logo {
+        margin-top: 16px;
+        margin-left: 21px;
+        margin-bottom: 11px;
+        width: 120px;
+        height: 33px;
+    }
+
+    .logo a, .logo a img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner {
+        height: 122px;
+    }
+
+    .describe-profit-tit span {
+        font-size: .28rem;
+        border: none;
+        padding: 0;
+        margin-top: 9px;
+    }
+
+    .describe-profit-tit span:after {
+        content: '';
+        border: none;
+    }
+
+    .describe-profit-tit {
+        margin-left: 0;
+        border: none;
+        margin-top: 0;
+        width: 100%;
+        height: 37px;
+        line-height: 37px;
+    }
+
+    .describe .pre {
+        line-height: 20px;
+        font-size: .2rem;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .describe-doubt {
+        height: 335px;
+        -webkit-background-size:140% 100%;
+        background-size:140% 100%;
+    }
+
+    .describe-doubt .describe-profit-tit {
+        margin-top: 15px;
+    }
+
+    .describe-doubt .describe-profit-tit span::after {
+        display: none;
+    }
+
+    .describe-doubt ul {
+        margin-top: 10px;
+    }
+
+    .describe-doubt .describe-profit-tit span {
+        font-size: .4rem;
+    }
+
+    .describe-doubt ul {
+        width: 325px;
+    }
+
+    .describe-doubt ul li:first-child {
+        margin-bottom: 5px;
+    }
+
+    .describe-doubt-q {
+        font-size: 16px;
+        -webkit-background-size: 15px 15px;
+        background-size: 15px 15px;
+        padding-left: 28px;
+    }
+
+    .describe-doubt-a {
+        line-height: 17px;
+        -webkit-background-size: 15px 15px;
+        background-size: 15px 15px;
+        padding-left: 28px;
+        font-size: 12px;
+    }
+
+    .pre-phone {
+        display: block;
+    }
+
+    .pre-pc {
+        display: none;
+    }
+
+    .describe-profit-tit-phone {
+        display: block;
+        line-height: 24px;
+        height: initial;
+        margin-top: 30px;
+    }
+
+    .describe-profit-tit-pc {
+        display: none;
+    }
+
+    .describe-profit-tit-phone span {
+        font-size: .3rem;
+    }
+
+    .describe-risk-tit {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 19px;
+    }
+
+    .describe-risk ul li {
+        width: 48%;
+        margin-bottom: 10px;
+        height: inherit;
+    }
+
+    .describe-risk ul li:nth-child(2n + 1) {
+        margin-left: 0;
+    }
+
+    .describe-risk ul li div:last-child {
+        padding: 9px 5px 9px 9px;
+        height: 80px;
+        font-size: 12px;
+        line-height: 17px;
+        -webkit-line-clamp: 5;
+
+    }
+
+    .describe-risk ul li div:first-child {
+        height: 80px;
+        line-height: 80px;
+        font-size: 21px;
+    }
+
+    .describe-risk-ms {
+        margin-top: 11px;
+        margin-bottom: 44px;
+        font-size: 16px;
+    }
+
+    .describe-Saving {
+        margin-top: 0;
+    }
+
+    .describe-Saving .describe-profit-tit span {
+        font-size: .4rem;
+    }
+
+    .describe-Saving ul li {
+        width: 100%;
+        height: 215px;
+        margin-top: 15px;
+    }
+
+    .describe-Saving ul li div p {
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .footer-describe {
+        font-size: 14px;
+        height: 36px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .footer .pre {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .consult {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+
+}
